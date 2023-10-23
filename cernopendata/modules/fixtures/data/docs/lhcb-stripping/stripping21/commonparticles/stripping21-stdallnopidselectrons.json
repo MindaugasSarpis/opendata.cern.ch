@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdallnopidselectrons",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdallnopidselectrons",
+    "title": "LHCb Stripping vstripping21 stdallnopidselectrons",
     "type": {
       "primary": "Documentation",
       "secondary": [

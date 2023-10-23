@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-lowmultcep-dstar2d0pi-kpipi0m-line",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 lowmultcep dstar2d0pi kpipi0m line",
+    "title": "LHCb Stripping vstripping21 lowmultcep dstar2d0pi kpipi0m line",
     "type": {
       "primary": "Documentation",
       "secondary": [

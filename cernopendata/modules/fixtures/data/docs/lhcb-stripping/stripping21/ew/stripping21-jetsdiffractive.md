@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingJetsDiffractive
 
@@ -15,30 +15,30 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingJetsDiffractiveVOIDFilter**
+LoKi::VoidFilter/StrippingJetsDiffractiveVOIDFilter
 
 |      |                                                                                                                              |
 |------|------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummary(LHCb.RecSummary.nPVs, 'Rec/Vertex/Primary')\<2)& (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) |
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdJets_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdJets_Particles
 
-|      |                                                                  |
-|------|------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdJets](./stripping21-stdjets) /Particles')\>0 |
+|      |                                                                                    |
+|------|------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdJets](../commonparticles/stripping21-stdjets.md)/Particles')\>0 |
 
-**FilterDesktop/JetsDiffractive**
+FilterDesktop/JetsDiffractive
 
-|                 |                                                 |
-|-----------------|-------------------------------------------------|
-| Code            | (PT \> 15000.0)                                 |
-| Inputs          | [ 'Phys/ [StdJets](./stripping21-stdjets) ' ] |
-| DecayDescriptor | None                                            |
-| Output          | Phys/JetsDiffractive/Particles                  |
+|                 |                                                                   |
+|-----------------|-------------------------------------------------------------------|
+| Code            | (PT \> 15000.0)                                                   |
+| Inputs          | \[ 'Phys/[StdJets](../commonparticles/stripping21-stdjets.md)' \] |
+| DecayDescriptor | None                                                              |
+| Output          | Phys/JetsDiffractive/Particles                                    |

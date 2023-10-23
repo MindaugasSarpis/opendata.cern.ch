@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdloosedplus2kpipi",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdloosedplus2kpipi",
+    "title": "LHCb Stripping vstripping21 stdloosedplus2kpipi",
     "type": {
       "primary": "Documentation",
       "secondary": [

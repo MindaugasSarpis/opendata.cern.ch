@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StdParticleFlow
 

@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingZ02MuMuLine
 
@@ -15,27 +15,27 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles
 
-|      |                                                                                    |
-|------|------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) /Particles')\>0 |
+|      |                                                                                                      |
+|------|------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)/Particles')\>0 |
 
-**CombineParticles/Z02MuMuLine**
+CombineParticles/Z02MuMuLine
 
-|                  |                                                                      |
-|------------------|----------------------------------------------------------------------|
-| Inputs           | [ 'Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) ' ]    |
-| DaughtersCuts    | { '' : 'ALL' , 'mu+' : '(PT\>3.0\*GeV)' , 'mu-' : '(PT\>3.0\*GeV)' } |
-| CombinationCut   | ATRUE                                                                |
-| MotherCut        | (MM\>40.0\*GeV)                                                      |
-| DecayDescriptor  | Z0 -\> mu+ mu-                                                       |
-| DecayDescriptors | [ 'Z0 -\> mu+ mu-' ]                                               |
-| Output           | Phys/Z02MuMuLine/Particles                                           |
+|                  |                                                                                     |
+|------------------|-------------------------------------------------------------------------------------|
+| Inputs           | \[ 'Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)' \] |
+| DaughtersCuts    | { '' : 'ALL' , 'mu+' : '(PT\>3.0\*GeV)' , 'mu-' : '(PT\>3.0\*GeV)' }                |
+| CombinationCut   | ATRUE                                                                               |
+| MotherCut        | (MM\>40.0\*GeV)                                                                     |
+| DecayDescriptor  | Z0 -\> mu+ mu-                                                                      |
+| DecayDescriptors | \[ 'Z0 -\> mu+ mu-' \]                                                              |
+| Output           | Phys/Z02MuMuLine/Particles                                                          |

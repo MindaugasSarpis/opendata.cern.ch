@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-jetsbjetpt50",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 jetsbjetpt50",
+    "title": "LHCb Stripping vstripping21 jetsbjetpt50",
     "type": {
       "primary": "Documentation",
       "secondary": [

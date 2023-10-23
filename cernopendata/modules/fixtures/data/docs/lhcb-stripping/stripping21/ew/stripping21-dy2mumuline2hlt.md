@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingDY2MuMuLine2Hlt
 
@@ -15,27 +15,27 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles
 
-|      |                                                                                    |
-|------|------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) /Particles')\>0 |
+|      |                                                                                                      |
+|------|------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)/Particles')\>0 |
 
-**CombineParticles/DY2MuMuLine2Hlt**
+CombineParticles/DY2MuMuLine2Hlt
 
 |                  |                                                                                                                                              |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) ' ]                                                                            |
+| Inputs           | \[ 'Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)' \]                                                          |
 | DaughtersCuts    | { '' : 'ALL' , 'mu+' : '(P\>10.0\*GeV) & (PT\>3.0\*GeV) & (TRPCHI2\>0.001)' , 'mu-' : '(P\>10.0\*GeV) & (PT\>3.0\*GeV) & (TRPCHI2\>0.001)' } |
 | CombinationCut   | ATRUE                                                                                                                                        |
 | MotherCut        | (MM\>5.0\*GeV)                                                                                                                               |
 | DecayDescriptor  | Z0 -\> mu+ mu-                                                                                                                               |
-| DecayDescriptors | [ 'Z0 -\> mu+ mu-' ]                                                                                                                       |
+| DecayDescriptors | \[ 'Z0 -\> mu+ mu-' \]                                                                                                                       |
 | Output           | Phys/DY2MuMuLine2Hlt/Particles                                                                                                               |

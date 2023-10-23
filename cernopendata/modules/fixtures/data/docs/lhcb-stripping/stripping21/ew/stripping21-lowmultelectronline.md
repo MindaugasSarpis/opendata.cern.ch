@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLowMultElectronLine
 
@@ -15,13 +15,13 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingLowMultElectronLineVOIDFilter**
+LoKi::VoidFilter/StrippingLowMultElectronLineVOIDFilter
 
 |      |                                                                                                                                |
 |------|--------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) & (recSummary(LHCb.RecSummary.nTracks, 'Rec/Track/Best') \< 6) |
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|

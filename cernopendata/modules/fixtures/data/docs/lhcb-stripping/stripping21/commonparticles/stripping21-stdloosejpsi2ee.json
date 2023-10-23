@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdloosejpsi2ee",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdloosejpsi2ee",
+    "title": "LHCb Stripping vstripping21 stdloosejpsi2ee",
     "type": {
       "primary": "Documentation",
       "secondary": [

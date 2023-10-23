@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-lowmulthadronlineps",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 lowmulthadronlineps",
+    "title": "LHCb Stripping vstripping21 lowmulthadronlineps",
     "type": {
       "primary": "Documentation",
       "secondary": [

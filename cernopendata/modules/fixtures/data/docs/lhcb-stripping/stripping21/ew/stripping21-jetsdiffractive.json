@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-jetsdiffractive",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 jetsdiffractive",
+    "title": "LHCb Stripping vstripping21 jetsdiffractive",
     "type": {
       "primary": "Documentation",
       "secondary": [

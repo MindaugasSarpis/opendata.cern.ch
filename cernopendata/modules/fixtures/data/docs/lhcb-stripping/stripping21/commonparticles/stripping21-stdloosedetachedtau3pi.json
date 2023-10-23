@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdloosedetachedtau3pi",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdloosedetachedtau3pi",
+    "title": "LHCb Stripping vstripping21 stdloosedetachedtau3pi",
     "type": {
       "primary": "Documentation",
       "secondary": [

@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-ximinuslllstrangebaryons",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 ximinuslllstrangebaryons",
+    "title": "LHCb Stripping vstripping21 ximinuslllstrangebaryons",
     "type": {
       "primary": "Documentation",
       "secondary": [

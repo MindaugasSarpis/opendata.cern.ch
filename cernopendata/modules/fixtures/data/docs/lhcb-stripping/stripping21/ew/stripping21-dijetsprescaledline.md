@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingDijetsPrescaledLine
 
@@ -15,36 +15,34 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingDijetsPrescaledLineVOIDFilter**
+LoKi::VoidFilter/StrippingDijetsPrescaledLineVOIDFilter
 
 |      |                                                               |
 |------|---------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \< 250) |
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_PFParticles_Particles**
+LoKi::VoidFilter/SelFilterPhys_PFParticles_Particles
 
 |      |                                           |
 |------|-------------------------------------------|
 | Code | CONTAINS('Phys/PFParticles/Particles')\>0 |
 
-**LoKi::PFJetMaker/DijetsJetsSelection**
+LoKi::PFJetMaker/DijetsJetsSelection
 
 |                 |                                    |
 |-----------------|------------------------------------|
-| Inputs          | [ 'Phys/PFParticles' ]           |
+| Inputs          | \[ 'Phys/PFParticles' \]           |
 | DecayDescriptor | None                               |
 | Output          | Phys/DijetsJetsSelection/Particles |
 
-****Tools:****
-
-**LoKi::FastJetMaker**
+LoKi::FastJetMaker
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -53,7 +51,7 @@
 | Strategy :               | 1                                                                                                         |
 | Type :                   | 0                                                                                                         |
 | Sort :                   | 2                                                                                                         |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | ParticleCombiner :       | MomentumCombiner                                                                                          |
 | RootInTES :              | None                                                                                                      |
@@ -77,9 +75,9 @@
 | AuditStart :             | False                                                                                                     |
 | Recombination :          | 0                                                                                                         |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**LoKi::DistanceCalculator**
+LoKi::DistanceCalculator
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -88,7 +86,7 @@
 | PropertiesPrint :        | False                                                                                                     |
 | TrackExtrapolator :      | TrackMasterExtrapolator:PUBLIC                                                                            |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | MaxPrints :              | 2                                                                                                         |
 | RootOnTES :              | None                                                                                                      |
 | DeltaPath :              | 0.0020000000                                                                                              |
@@ -110,21 +108,21 @@
 | UseEfficiencyRowFormat : | True                                                                                                      |
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
 | MaxIterations :          | 10                                                                                                        |
-| DiGammaDecays :          | [ ( pi0 -\> ) , ( eta -\> ) , ]                                                                         |
+| DiGammaDecays :          | \[ ( pi0 -\> ) , ( eta -\> ) , \]                                                                         |
 | AuditStart :             | False                                                                                                     |
 | ToleranceInZ :           | 0.0020000000                                                                                              |
 | StateProvider :          | TrackStateProvider:PUBLIC                                                                                 |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**CombineParticles/DijetsPrescaledLine**
+CombineParticles/DijetsPrescaledLine
 
 |                  |                                              |
 |------------------|----------------------------------------------|
-| Inputs           | [ 'Phys/DijetsJetsSelection' ]             |
+| Inputs           | \[ 'Phys/DijetsJetsSelection' \]             |
 | DaughtersCuts    | { '' : 'ALL' , 'CELLjet' : 'PT \> 19000.0' } |
 | CombinationCut   | COSDPHI \< -0.8                              |
 | MotherCut        | ALL                                          |
 | DecayDescriptor  | H_10 -\> CELLjet CELLjet                     |
-| DecayDescriptors | [ 'H_10 -\> CELLjet CELLjet' ]             |
+| DecayDescriptors | \[ 'H_10 -\> CELLjet CELLjet' \]             |
 | Output           | Phys/DijetsPrescaledLine/Particles           |

@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingWmuAKTJetsLine
 
@@ -15,42 +15,42 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles
+
+|      |                                                                                                      |
+|------|------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)/Particles')\>0 |
+
+FilterDesktop/selWmuAKTJetsWmu
+
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+| Code            | (PT\>10.0\*GeV) & (PT\<200000.0\*GeV)                                               |
+| Inputs          | \[ 'Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)' \] |
+| DecayDescriptor | None                                                                                |
+| Output          | Phys/selWmuAKTJetsWmu/Particles                                                     |
+
+LoKi::VoidFilter/SelFilterPhys_StdJets_Particles
 
 |      |                                                                                    |
 |------|------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) /Particles')\>0 |
+| Code | CONTAINS('Phys/[StdJets](../commonparticles/stripping21-stdjets.md)/Particles')\>0 |
 
-**FilterDesktop/selWmuAKTJetsWmu**
+CombineParticles/WmuAKTJetsLine
 
-|                 |                                                                   |
-|-----------------|-------------------------------------------------------------------|
-| Code            | (PT\>10.0\*GeV) & (PT\<200000.0\*GeV)                             |
-| Inputs          | [ 'Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) ' ] |
-| DecayDescriptor | None                                                              |
-| Output          | Phys/selWmuAKTJetsWmu/Particles                                   |
-
-**LoKi::VoidFilter/SelFilterPhys_StdJets_Particles**
-
-|      |                                                                  |
-|------|------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdJets](./stripping21-stdjets) /Particles')\>0 |
-
-**CombineParticles/WmuAKTJetsLine**
-
-|                  |                                                                                       |
-|------------------|---------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/ [StdJets](./stripping21-stdjets) ' , 'Phys/selWmuAKTJetsWmu' ]             |
-| DaughtersCuts    | { '' : 'ALL' , 'CELLjet' : ' (PT \> 15.0 \* GeV ) ' , 'mu+' : 'ALL' , 'mu-' : 'ALL' } |
-| CombinationCut   | AALLSAMEBPV & ( dr_13 \> 0.5 )& ( dr_23 \> 0.5 )                                      |
-| MotherCut        | ALL                                                                                   |
-| DecayDescriptor  | [H+ -\> CELLjet CELLjet mu+]cc                                                      |
-| DecayDescriptors | [ '[H+ -\> CELLjet CELLjet mu+]cc' ]                                              |
-| Output           | Phys/WmuAKTJetsLine/Particles                                                         |
+|                  |                                                                                             |
+|------------------|---------------------------------------------------------------------------------------------|
+| Inputs           | \[ 'Phys/[StdJets](../commonparticles/stripping21-stdjets.md)' , 'Phys/selWmuAKTJetsWmu' \] |
+| DaughtersCuts    | { '' : 'ALL' , 'CELLjet' : ' (PT \> 15.0 \* GeV ) ' , 'mu+' : 'ALL' , 'mu-' : 'ALL' }       |
+| CombinationCut   | AALLSAMEBPV & ( dr_13 \> 0.5 )& ( dr_23 \> 0.5 )                                            |
+| MotherCut        | ALL                                                                                         |
+| DecayDescriptor  | \[H+ -\> CELLjet CELLjet mu+\]cc                                                            |
+| DecayDescriptors | \[ '\[H+ -\> CELLjet CELLjet mu+\]cc' \]                                                    |
+| Output           | Phys/WmuAKTJetsLine/Particles                                                               |

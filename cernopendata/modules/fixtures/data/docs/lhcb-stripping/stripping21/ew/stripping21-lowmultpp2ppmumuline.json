@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-lowmultpp2ppmumuline",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 lowmultpp2ppmumuline",
+    "title": "LHCb Stripping vstripping21 lowmultpp2ppmumuline",
     "type": {
       "primary": "Documentation",
       "secondary": [

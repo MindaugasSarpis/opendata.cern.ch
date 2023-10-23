@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingWeAKTJetsLine
 
@@ -15,42 +15,42 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsElectrons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsElectrons_Particles
 
-|      |                                                                                              |
-|------|----------------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsElectrons](./stripping21-stdallnopidselectrons) /Particles')\>0 |
+|      |                                                                                                                |
+|------|----------------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsElectrons](../commonparticles/stripping21-stdallnopidselectrons.md)/Particles')\>0 |
 
-**FilterDesktop/selWeAKTJetsWe**
+FilterDesktop/selWeAKTJetsWe
 
-|                 |                                                                             |
-|-----------------|-----------------------------------------------------------------------------|
-| Code            |                                                                             |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsElectrons](./stripping21-stdallnopidselectrons) ' ] |
-| DecayDescriptor | None                                                                        |
-| Output          | Phys/selWeAKTJetsWe/Particles                                               |
+|                 |                                                                                               |
+|-----------------|-----------------------------------------------------------------------------------------------|
+| Code            |                                                                                               |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsElectrons](../commonparticles/stripping21-stdallnopidselectrons.md)' \] |
+| DecayDescriptor | None                                                                                          |
+| Output          | Phys/selWeAKTJetsWe/Particles                                                                 |
 
-**LoKi::VoidFilter/SelFilterPhys_StdJets_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdJets_Particles
 
-|      |                                                                  |
-|------|------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdJets](./stripping21-stdjets) /Particles')\>0 |
+|      |                                                                                    |
+|------|------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdJets](../commonparticles/stripping21-stdjets.md)/Particles')\>0 |
 
-**CombineParticles/WeAKTJetsLine**
+CombineParticles/WeAKTJetsLine
 
-|                  |                                                                                     |
-|------------------|-------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/ [StdJets](./stripping21-stdjets) ' , 'Phys/selWeAKTJetsWe' ]             |
-| DaughtersCuts    | { '' : 'ALL' , 'CELLjet' : ' (PT \> 15.0 \* GeV ) ' , 'e+' : 'ALL' , 'e-' : 'ALL' } |
-| CombinationCut   | AALLSAMEBPV & ( dr_13 \> 0.5 )& ( dr_23 \> 0.5 )                                    |
-| MotherCut        | ALL                                                                                 |
-| DecayDescriptor  | [H+ -\> CELLjet CELLjet e+]cc                                                     |
-| DecayDescriptors | [ '[H+ -\> CELLjet CELLjet e+]cc' ]                                             |
-| Output           | Phys/WeAKTJetsLine/Particles                                                        |
+|                  |                                                                                           |
+|------------------|-------------------------------------------------------------------------------------------|
+| Inputs           | \[ 'Phys/[StdJets](../commonparticles/stripping21-stdjets.md)' , 'Phys/selWeAKTJetsWe' \] |
+| DaughtersCuts    | { '' : 'ALL' , 'CELLjet' : ' (PT \> 15.0 \* GeV ) ' , 'e+' : 'ALL' , 'e-' : 'ALL' }       |
+| CombinationCut   | AALLSAMEBPV & ( dr_13 \> 0.5 )& ( dr_23 \> 0.5 )                                          |
+| MotherCut        | ALL                                                                                       |
+| DecayDescriptor  | \[H+ -\> CELLjet CELLjet e+\]cc                                                           |
+| DecayDescriptors | \[ '\[H+ -\> CELLjet CELLjet e+\]cc' \]                                                   |
+| Output           | Phys/WeAKTJetsLine/Particles                                                              |

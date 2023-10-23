@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLowMultMuonLine
 
@@ -15,13 +15,13 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingLowMultMuonLineVOIDFilter**
+LoKi::VoidFilter/StrippingLowMultMuonLineVOIDFilter
 
 |      |                                                                                                                                                                                              |
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \> 0) & (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) & (recSummary(LHCb.RecSummary.nTracks, 'Rec/Track/Best') \< 6) |
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|

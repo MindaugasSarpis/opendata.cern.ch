@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdjets",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdjets",
+    "title": "LHCb Stripping vstripping21 stdjets",
     "type": {
       "primary": "Documentation",
       "secondary": [

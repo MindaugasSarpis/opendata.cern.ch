@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdtightanndownmuons",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdtightanndownmuons",
+    "title": "LHCb Stripping vstripping21 stdtightanndownmuons",
     "type": {
       "primary": "Documentation",
       "secondary": [

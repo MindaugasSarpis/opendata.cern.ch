@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingSbarSCorrelationsLambdaCplusLine
 
@@ -15,84 +15,84 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingSbarSCorrelationsLambdaCplusLineVOIDFilter**
+LoKi::VoidFilter/StrippingSbarSCorrelationsLambdaCplusLineVOIDFilter
 
 |      |                                                                  |
 |------|------------------------------------------------------------------|
 | Code | ( recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \< 1000 ) |
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)/Particles')\>0 |
 
-**FilterDesktop/PiForSbarSCorrelations**
+FilterDesktop/PiForSbarSCorrelations
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            | ((ISLONG)&(BPVIPCHI2() \> 9)&(P \> 2000))                           |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/PiForSbarSCorrelations/Particles                               |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            | ((ISLONG)&(BPVIPCHI2() \> 9)&(P \> 2000))                                             |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/PiForSbarSCorrelations/Particles                                                 |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsProtons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsProtons_Particles
 
-|      |                                                                                          |
-|------|------------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsProtons](./stripping21-stdallnopidsprotons) /Particles')\>0 |
+|      |                                                                                                            |
+|------|------------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsProtons](../commonparticles/stripping21-stdallnopidsprotons.md)/Particles')\>0 |
 
-**FilterDesktop/ProtonForSbarSCorrelations**
+FilterDesktop/ProtonForSbarSCorrelations
 
-|                 |                                                                         |
-|-----------------|-------------------------------------------------------------------------|
-| Code            | ((ISLONG)&(BPVIPCHI2() \> 9)&(P \> 2000))                               |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsProtons](./stripping21-stdallnopidsprotons) ' ] |
-| DecayDescriptor | None                                                                    |
-| Output          | Phys/ProtonForSbarSCorrelations/Particles                               |
+|                 |                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------|
+| Code            | ((ISLONG)&(BPVIPCHI2() \> 9)&(P \> 2000))                                                 |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsProtons](../commonparticles/stripping21-stdallnopidsprotons.md)' \] |
+| DecayDescriptor | None                                                                                      |
+| Output          | Phys/ProtonForSbarSCorrelations/Particles                                                 |
 
-**CombineParticles/LambdaSbarSCorrelations**
+CombineParticles/LambdaSbarSCorrelations
 
 |                  |                                                                                                                          |
 |------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/PiForSbarSCorrelations' , 'Phys/ProtonForSbarSCorrelations' ]                                                  |
-| DaughtersCuts    | { '' : 'ALL' , 'p+' : 'ALL' , 'pi+' : 'ALL' , 'pi-' : 'ALL' , 'p\~-' : 'ALL' }                                           |
+| Inputs           | \[ 'Phys/PiForSbarSCorrelations' , 'Phys/ProtonForSbarSCorrelations' \]                                                  |
+| DaughtersCuts    | { '' : 'ALL' , 'p+' : 'ALL' , 'pi+' : 'ALL' , 'pi-' : 'ALL' , 'p~-' : 'ALL' }                                            |
 | CombinationCut   | ((ADAMASS('Lambda0')\<50\*MeV))                                                                                          |
 | MotherCut        | (( (CHILD(MIPDV(PRIMARY),1)\*CHILD(MIPDV(PRIMARY),2)/MIPDV(PRIMARY))\>10)&(VFASPF(VCHI2PDOF) \< 9)&( BPVIPCHI2() \< 49)) |
 | DecayDescriptor  | None                                                                                                                     |
-| DecayDescriptors | [ 'Lambda0 -\> p+ pi-' ]                                                                                               |
+| DecayDescriptors | \[ 'Lambda0 -\> p+ pi-' \]                                                                                               |
 | Output           | Phys/LambdaSbarSCorrelations/Particles                                                                                   |
 
-**LoKi::VoidFilter/SelFilterPhys_StdTightKaons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdTightKaons_Particles
 
-|      |                                                                              |
-|------|------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdTightKaons](./stripping21-stdtightkaons) /Particles')\>0 |
+|      |                                                                                                |
+|------|------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdTightKaons](../commonparticles/stripping21-stdtightkaons.md)/Particles')\>0 |
 
-**FilterDesktop/KForSbarSCorrelations**
+FilterDesktop/KForSbarSCorrelations
 
-|                 |                                                                            |
-|-----------------|----------------------------------------------------------------------------|
-| Code            | ((ISLONG)&(P \> 5000)&(PIDK \> 8)&( (PIDK-PIDp) \> 0)&(BPVIPCHI2() \< 49)) |
-| Inputs          | [ 'Phys/ [StdTightKaons](./stripping21-stdtightkaons) ' ]                |
-| DecayDescriptor | None                                                                       |
-| Output          | Phys/KForSbarSCorrelations/Particles                                       |
+|                 |                                                                               |
+|-----------------|-------------------------------------------------------------------------------|
+| Code            | ((ISLONG)&(P \> 5000)&(PIDK \> 8)&( (PIDK-PIDp) \> 0)&(BPVIPCHI2() \< 49))    |
+| Inputs          | \[ 'Phys/[StdTightKaons](../commonparticles/stripping21-stdtightkaons.md)' \] |
+| DecayDescriptor | None                                                                          |
+| Output          | Phys/KForSbarSCorrelations/Particles                                          |
 
-**CombineParticles/SbarSCorrelationsLambdaCplusLine**
+CombineParticles/SbarSCorrelationsLambdaCplusLine
 
-|                  |                                                                                        |
-|------------------|----------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/KForSbarSCorrelations' , 'Phys/LambdaSbarSCorrelations' ]                    |
-| DaughtersCuts    | { '' : 'ALL' , 'K+' : 'ALL' , 'K-' : 'ALL' , 'Lambda0' : 'ALL' , 'Lambda\~0' : 'ALL' } |
-| CombinationCut   | (AALLSAMEBPV)                                                                          |
-| MotherCut        | PZ\>0                                                                                  |
-| DecayDescriptor  | None                                                                                   |
-| DecayDescriptors | [ 'Lambda_c+ -\> Lambda0 K+' ]                                                       |
-| Output           | Phys/SbarSCorrelationsLambdaCplusLine/Particles                                        |
+|                  |                                                                                       |
+|------------------|---------------------------------------------------------------------------------------|
+| Inputs           | \[ 'Phys/KForSbarSCorrelations' , 'Phys/LambdaSbarSCorrelations' \]                   |
+| DaughtersCuts    | { '' : 'ALL' , 'K+' : 'ALL' , 'K-' : 'ALL' , 'Lambda0' : 'ALL' , 'Lambda~0' : 'ALL' } |
+| CombinationCut   | (AALLSAMEBPV)                                                                         |
+| MotherCut        | PZ\>0                                                                                 |
+| DecayDescriptor  | None                                                                                  |
+| DecayDescriptors | \[ 'Lambda_c+ -\> Lambda0 K+' \]                                                      |
+| Output           | Phys/SbarSCorrelationsLambdaCplusLine/Particles                                       |

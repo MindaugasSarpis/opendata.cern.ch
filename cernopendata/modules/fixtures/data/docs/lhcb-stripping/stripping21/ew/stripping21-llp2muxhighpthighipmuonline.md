@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLLP2MuXHighPTHighIPMuonLine
 
@@ -15,24 +15,24 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles
 
-|      |                                                                                    |
-|------|------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) /Particles')\>0 |
+|      |                                                                                                      |
+|------|------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)/Particles')\>0 |
 
-**FilterDesktop/LLP2MuXHighPTHighIPMuonLine**
+FilterDesktop/LLP2MuXHighPTHighIPMuonLine
 
-|                 |                                                                   |
-|-----------------|-------------------------------------------------------------------|
-| Code            | ( PT \> 12000.000000 ) & ( MIPDV('') \> 0.250000 )                |
-| Inputs          | [ 'Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) ' ] |
-| DecayDescriptor | None                                                              |
-| Output          | Phys/LLP2MuXHighPTHighIPMuonLine/Particles                        |
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+| Code            | ( PT \> 12000.000000 ) & ( MIPDV('') \> 0.250000 )                                  |
+| Inputs          | \[ 'Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)' \] |
+| DecayDescriptor | None                                                                                |
+| Output          | Phys/LLP2MuXHighPTHighIPMuonLine/Particles                                          |

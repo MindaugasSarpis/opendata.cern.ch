@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdtightannprotons",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdtightannprotons",
+    "title": "LHCb Stripping vstripping21 stdtightannprotons",
     "type": {
       "primary": "Documentation",
       "secondary": [

@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-dijetsprescaledline",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 dijetsprescaledline",
+    "title": "LHCb Stripping vstripping21 dijetsprescaledline",
     "type": {
       "primary": "Documentation",
       "secondary": [

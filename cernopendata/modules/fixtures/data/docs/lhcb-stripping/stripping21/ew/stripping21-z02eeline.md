@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingZ02eeLine
 
@@ -15,27 +15,27 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsElectrons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsElectrons_Particles
 
-|      |                                                                                              |
-|------|----------------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsElectrons](./stripping21-stdallnopidselectrons) /Particles')\>0 |
+|      |                                                                                                                |
+|------|----------------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsElectrons](../commonparticles/stripping21-stdallnopidselectrons.md)/Particles')\>0 |
 
-**CombineParticles/Z02eeLine**
+CombineParticles/Z02eeLine
 
-|                  |                                                                                                                                                                                                                                                                                                                                                      |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/ [StdAllNoPIDsElectrons](./stripping21-stdallnopidselectrons) ' ]                                                                                                                                                                                                                                                                          |
-| DaughtersCuts    | { '' : 'ALL' , 'e+' : '((PT\>10.0\*GeV) & (PPINFO(LHCb.ProtoParticle.CaloPrsE,0)\>50.0) & (PPINFO(LHCb.ProtoParticle.CaloEcalE,0)\>P\*0.1) & (PPINFO(LHCb.ProtoParticle.CaloHcalE,99999) 10.0\*GeV) & (PPINFO(LHCb.ProtoParticle.CaloPrsE,0)\>50.0) & (PPINFO(LHCb.ProtoParticle.CaloEcalE,0)\>P\*0.1) & (PPINFO(LHCb.ProtoParticle.CaloHcalE,99999) |
-| CombinationCut   | ATRUE                                                                                                                                                                                                                                                                                                                                                |
-| MotherCut        | (MM\>40.0\*GeV)                                                                                                                                                                                                                                                                                                                                      |
-| DecayDescriptor  | Z0 -\> e+ e-                                                                                                                                                                                                                                                                                                                                         |
-| DecayDescriptors | [ 'Z0 -\> e+ e-' ]                                                                                                                                                                                                                                                                                                                                 |
-| Output           | Phys/Z02eeLine/Particles                                                                                                                                                                                                                                                                                                                             |
+|                  |                                                                                                                                                                                                                                                                                                                                                     |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Inputs           | \[ 'Phys/[StdAllNoPIDsElectrons](../commonparticles/stripping21-stdallnopidselectrons.md)' \]                                                                                                                                                                                                                                                       |
+| DaughtersCuts    | { '' : 'ALL' , 'e+' : '((PT\>10.0\*GeV) & (PPINFO(LHCb.ProtoParticle.CaloPrsE,0)\>50.0) & (PPINFO(LHCb.ProtoParticle.CaloEcalE,0)\>P\*0.1) & (PPINFO(LHCb.ProtoParticle.CaloHcalE,99999)10.0\*GeV) & (PPINFO(LHCb.ProtoParticle.CaloPrsE,0)\>50.0) & (PPINFO(LHCb.ProtoParticle.CaloEcalE,0)\>P\*0.1) & (PPINFO(LHCb.ProtoParticle.CaloHcalE,99999) |
+| CombinationCut   | ATRUE                                                                                                                                                                                                                                                                                                                                               |
+| MotherCut        | (MM\>40.0\*GeV)                                                                                                                                                                                                                                                                                                                                     |
+| DecayDescriptor  | Z0 -\> e+ e-                                                                                                                                                                                                                                                                                                                                        |
+| DecayDescriptors | \[ 'Z0 -\> e+ e-' \]                                                                                                                                                                                                                                                                                                                                |
+| Output           | Phys/Z02eeLine/Particles                                                                                                                                                                                                                                                                                                                            |

@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StdLooseDownMuons
 
@@ -6,43 +6,15 @@
 
 |                 |                    |
 |-----------------|--------------------|
-| Inputs          | []               |
+| Inputs          | \[\]               |
 | Input           | Rec/ProtoP/Charged |
 | DecayDescriptor | None               |
 | Output          | None               |
 | Particle        | muon               |
 
-****Tools:****
+ProtoParticleMUONFilter/StdLooseDownMuons.Muon
 
-**ProtoParticleMUONFilter/StdLooseDownMuons.Muon**
-
-|                          |                                                                                                           |
-|--------------------------|-----------------------------------------------------------------------------------------------------------|
-| AuditFinalize :          | False                                                                                                     |
-| AuditInitialize :        | False                                                                                                     |
-| AuditStart :             | False                                                                                                     |
-| AuditStop :              | False                                                                                                     |
-| AuditTools :             | False                                                                                                     |
-| Context :                | None                                                                                                      |
-| ContextService :         | AlgContextSvc                                                                                             |
-| CounterList :            | ['.\*']                                                                                                 |
-| EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| ErrorsPrint :            | True                                                                                                      |
-| GlobalTimeOffset :       | 0.0                                                                                                       |
-| MonitorService :         | MonitorSvc                                                                                                |
-| OutputLevel :            | 7                                                                                                         |
-| PropertiesPrint :        | False                                                                                                     |
-| RegularRowFormat :       | \| %\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.7g\| \|%\|#11.5g\| \|%\|#11.5g\| \|%\|#12.5g\| \|%\|#12.5g\| \| |
-| RootInTES :              | None                                                                                                      |
-| RootOnTES :              | None                                                                                                      |
-| Selection :              | ["RequiresDet='MUON' IsMuon=True"]                                                                      |
-| StatEntityList :         | []                                                                                                      |
-| StatPrint :              | True                                                                                                      |
-| StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
-| TypePrint :              | True                                                                                                      |
-| UseEfficiencyRowFormat : | True                                                                                                      |
-
-**TrackSelector/StdLooseDownMuons.TrackSelector**
+TrackSelector/StdLooseDownMuons.TrackSelector
 
 |                           |                                                                                                           |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -54,7 +26,7 @@
 | AuditTools :              | False                                                                                                     |
 | Context :                 | None                                                                                                      |
 | ContextService :          | AlgContextSvc                                                                                             |
-| CounterList :             | ['.\*']                                                                                                 |
+| CounterList :             | \['.\*'\]                                                                                                 |
 | EfficiencyRowFormat :     | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
 | ErrorsPrint :             | True                                                                                                      |
 | GlobalTimeOffset :        | 0.0                                                                                                       |
@@ -91,10 +63,10 @@
 | RegularRowFormat :        | \| %\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.7g\| \|%\|#11.5g\| \|%\|#11.5g\| \|%\|#12.5g\| \|%\|#12.5g\| \| |
 | RootInTES :               | None                                                                                                      |
 | RootOnTES :               | None                                                                                                      |
-| StatEntityList :          | []                                                                                                      |
+| StatEntityList :          | \[\]                                                                                                      |
 | StatPrint :               | True                                                                                                      |
 | StatTableHeader :         | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
-| TrackTypes :              | ['Downstream']                                                                                          |
+| TrackTypes :              | \['Downstream'\]                                                                                          |
 | TypePrint :               | True                                                                                                      |
 | UseEfficiencyRowFormat :  | True                                                                                                      |
 | iWeight :                 | 1.0                                                                                                       |

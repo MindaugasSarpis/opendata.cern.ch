@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingWMuLowLine
 
@@ -15,24 +15,24 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles
 
-|      |                                                                                    |
-|------|------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) /Particles')\>0 |
+|      |                                                                                                      |
+|------|------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)/Particles')\>0 |
 
-**FilterDesktop/WMuLowLine**
+FilterDesktop/WMuLowLine
 
-|                 |                                                                   |
-|-----------------|-------------------------------------------------------------------|
-| Code            | (PT\>15.0\*GeV)                                                   |
-| Inputs          | [ 'Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) ' ] |
-| DecayDescriptor | None                                                              |
-| Output          | Phys/WMuLowLine/Particles                                         |
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+| Code            | (PT\>15.0\*GeV)                                                                     |
+| Inputs          | \[ 'Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)' \] |
+| DecayDescriptor | None                                                                                |
+| Output          | Phys/WMuLowLine/Particles                                                           |

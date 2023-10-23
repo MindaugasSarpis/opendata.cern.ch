@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-jetsdijet20-t6a",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 jetsdijet20 t6a",
+    "title": "LHCb Stripping vstripping21 jetsdijet20 t6a",
     "type": {
       "primary": "Documentation",
       "secondary": [

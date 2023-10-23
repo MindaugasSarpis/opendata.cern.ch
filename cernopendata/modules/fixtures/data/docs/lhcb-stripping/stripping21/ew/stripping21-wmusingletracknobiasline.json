@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-wmusingletracknobiasline",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 wmusingletracknobiasline",
+    "title": "LHCb Stripping vstripping21 wmusingletracknobiasline",
     "type": {
       "primary": "Documentation",
       "secondary": [

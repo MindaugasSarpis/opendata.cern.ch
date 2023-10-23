@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingWeLine
 
@@ -15,24 +15,24 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsElectrons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsElectrons_Particles
 
-|      |                                                                                              |
-|------|----------------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsElectrons](./stripping21-stdallnopidselectrons) /Particles')\>0 |
+|      |                                                                                                                |
+|------|----------------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsElectrons](../commonparticles/stripping21-stdallnopidselectrons.md)/Particles')\>0 |
 
-**FilterDesktop/WeLine**
+FilterDesktop/WeLine
 
-|                 |                                                                                                                                                           |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Code            | (PPINFO(LHCb.ProtoParticle.CaloPrsE,0)\>50.0) & (PPINFO(LHCb.ProtoParticle.CaloEcalE,0)\>P\*0.1) & (PPINFO(LHCb.ProtoParticle.CaloHcalE,99999) 20.0\*GeV) |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsElectrons](./stripping21-stdallnopidselectrons) ' ]                                                                               |
-| DecayDescriptor | None                                                                                                                                                      |
-| Output          | Phys/WeLine/Particles                                                                                                                                     |
+|                 |                                                                                                                                                          |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Code            | (PPINFO(LHCb.ProtoParticle.CaloPrsE,0)\>50.0) & (PPINFO(LHCb.ProtoParticle.CaloEcalE,0)\>P\*0.1) & (PPINFO(LHCb.ProtoParticle.CaloHcalE,99999)20.0\*GeV) |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsElectrons](../commonparticles/stripping21-stdallnopidselectrons.md)' \]                                                            |
+| DecayDescriptor | None                                                                                                                                                     |
+| Output          | Phys/WeLine/Particles                                                                                                                                    |

@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingWMuSingleTrackNoBiasLine
 
@@ -15,24 +15,24 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsMuons_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsMuons](./stripping21-stdallnopidsmuons) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsMuons](../commonparticles/stripping21-stdallnopidsmuons.md)/Particles')\>0 |
 
-**FilterDesktop/WMuSingleTrackNoBiasLine**
+FilterDesktop/WMuSingleTrackNoBiasLine
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            | (PT\>15.0\*GeV)                                                     |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsMuons](./stripping21-stdallnopidsmuons) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/WMuSingleTrackNoBiasLine/Particles                             |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            | (PT\>15.0\*GeV)                                                                       |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsMuons](../commonparticles/stripping21-stdallnopidsmuons.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/WMuSingleTrackNoBiasLine/Particles                                               |

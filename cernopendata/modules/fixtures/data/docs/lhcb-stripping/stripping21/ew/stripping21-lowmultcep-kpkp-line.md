@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLowMultCEP_KpKp_line
 
@@ -15,42 +15,42 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingLowMultCEP_KpKp_lineVOIDFilter**
+LoKi::VoidFilter/StrippingLowMultCEP_KpKp_lineVOIDFilter
 
 |      |                                                                                                                                                                     |
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \> 1) & (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) & (CONTAINS ('Rec/Track/Best') \< 12) |
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsKaons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsKaons_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsKaons](./stripping21-stdallnopidskaons) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsKaons](../commonparticles/stripping21-stdallnopidskaons.md)/Particles')\>0 |
 
-**FilterDesktop/KaonsForKKForLowMult**
+FilterDesktop/KaonsForKKForLowMult
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            | (PT \> 100.0) & (P \> 10000.0) & (TRCHI2DOF \< 3.0) & (PIDK \> 5.0) |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsKaons](./stripping21-stdallnopidskaons) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/KaonsForKKForLowMult/Particles                                 |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            | (PT \> 100.0) & (P \> 10000.0) & (TRCHI2DOF \< 3.0) & (PIDK \> 5.0)                   |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsKaons](../commonparticles/stripping21-stdallnopidskaons.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/KaonsForKKForLowMult/Particles                                                   |
 
-**CombineParticles/LowMultCEP_KpKp_line**
+CombineParticles/LowMultCEP_KpKp_line
 
 |                  |                                              |
 |------------------|----------------------------------------------|
-| Inputs           | [ 'Phys/KaonsForKKForLowMult' ]            |
+| Inputs           | \[ 'Phys/KaonsForKKForLowMult' \]            |
 | DaughtersCuts    | { '' : 'ALL' , 'K+' : 'ALL' , 'K-' : 'ALL' } |
 | CombinationCut   | AALL                                         |
 | MotherCut        | ALL                                          |
 | DecayDescriptor  | None                                         |
-| DecayDescriptors | [ '[D0 -\> K+ K+]cc' ]                   |
+| DecayDescriptors | \[ '\[D0 -\> K+ K+\]cc' \]                   |
 | Output           | Phys/LowMultCEP_KpKp_line/Particles          |

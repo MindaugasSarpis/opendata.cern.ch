@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdltunbiasedjpsi2mumu",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdltunbiasedjpsi2mumu",
+    "title": "LHCb Stripping vstripping21 stdltunbiasedjpsi2mumu",
     "type": {
       "primary": "Documentation",
       "secondary": [

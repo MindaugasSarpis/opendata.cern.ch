@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdlooserho0",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdlooserho0",
+    "title": "LHCb Stripping vstripping21 stdlooserho0",
     "type": {
       "primary": "Documentation",
       "secondary": [

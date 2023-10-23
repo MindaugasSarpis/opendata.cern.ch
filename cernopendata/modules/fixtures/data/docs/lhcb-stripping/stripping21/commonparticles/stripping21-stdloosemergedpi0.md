@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StdLooseMergedPi0
 
@@ -6,7 +6,7 @@
 
 |                 |                     |
 |-----------------|---------------------|
-| Inputs          | []                |
+| Inputs          | \[\]                |
 | Input           | Rec/ProtoP/Neutrals |
 | DecayDescriptor | Pi0                 |
 | Output          | None                |

@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdloosedalitzpi0",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdloosedalitzpi0",
+    "title": "LHCb Stripping vstripping21 stdloosedalitzpi0",
     "type": {
       "primary": "Documentation",
       "secondary": [

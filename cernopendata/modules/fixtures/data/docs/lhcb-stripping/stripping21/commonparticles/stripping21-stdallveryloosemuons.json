@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdallveryloosemuons",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdallveryloosemuons",
+    "title": "LHCb Stripping vstripping21 stdallveryloosemuons",
     "type": {
       "primary": "Documentation",
       "secondary": [

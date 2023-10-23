@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stddielectrongamma",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stddielectrongamma",
+    "title": "LHCb Stripping vstripping21 stddielectrongamma",
     "type": {
       "primary": "Documentation",
       "secondary": [

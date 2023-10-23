@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLowMultCEP_LMR2PiPi_line
 
@@ -15,42 +15,42 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingLowMultCEP_LMR2PiPi_lineVOIDFilter**
+LoKi::VoidFilter/StrippingLowMultCEP_LMR2PiPi_lineVOIDFilter
 
 |      |                                                                                                                                                                    |
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \> 1) & (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) & (CONTAINS ('Rec/Track/Best') \< 8) |
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)/Particles')\>0 |
 
-**FilterDesktop/PionsForLowMult**
+FilterDesktop/PionsForLowMult
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            | (PT \> 100.0) & (P \> 5000.0) & (TRCHI2DOF \< 3.0)                  |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/PionsForLowMult/Particles                                      |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            | (PT \> 100.0) & (P \> 5000.0) & (TRCHI2DOF \< 3.0)                                    |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/PionsForLowMult/Particles                                                        |
 
-**CombineParticles/LowMultCEP_LMR2PiPi_line**
+CombineParticles/LowMultCEP_LMR2PiPi_line
 
 |                  |                                                                                                                                   |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/PionsForLowMult' ]                                                                                                      |
+| Inputs           | \[ 'Phys/PionsForLowMult' \]                                                                                                      |
 | DaughtersCuts    | { '' : 'ALL' , 'pi+' : 'ALL' , 'pi-' : 'ALL' }                                                                                    |
 | CombinationCut   | (APT \> 0.0) & (APT \< 1500.0) & (AM \> 450.0) & (AM \< 1700.0) & (ADOCAMAX('LoKi::DistanceCalculator') \< 0.1) & (AP \> 15000.0) |
 | MotherCut        | (VFASPF(VCHI2PDOF) \< 3.0)                                                                                                        |
 | DecayDescriptor  | None                                                                                                                              |
-| DecayDescriptors | [ 'phi(1020) -\> pi+ pi-' ]                                                                                                     |
+| DecayDescriptors | \[ 'phi(1020) -\> pi+ pi-' \]                                                                                                     |
 | Output           | Phys/LowMultCEP_LMR2PiPi_line/Particles                                                                                           |

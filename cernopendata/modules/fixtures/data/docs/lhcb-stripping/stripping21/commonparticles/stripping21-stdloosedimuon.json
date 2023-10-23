@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdloosedimuon",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdloosedimuon",
+    "title": "LHCb Stripping vstripping21 stdloosedimuon",
     "type": {
       "primary": "Documentation",
       "secondary": [

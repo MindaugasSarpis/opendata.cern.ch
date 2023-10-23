@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLowMultPP2PPMuMuLine
 
@@ -15,13 +15,13 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingLowMultPP2PPMuMuLineVOIDFilter**
+LoKi::VoidFilter/StrippingLowMultPP2PPMuMuLineVOIDFilter
 
 |      |                                                                                                                               |
 |------|-------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \> 0) & (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) |
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|

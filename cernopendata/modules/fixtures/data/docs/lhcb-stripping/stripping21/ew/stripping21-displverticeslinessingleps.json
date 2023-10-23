@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-displverticeslinessingleps",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 displverticeslinessingleps",
+    "title": "LHCb Stripping vstripping21 displverticeslinessingleps",
     "type": {
       "primary": "Documentation",
       "secondary": [

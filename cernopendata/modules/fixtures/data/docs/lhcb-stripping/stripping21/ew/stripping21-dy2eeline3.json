@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-dy2eeline3",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 dy2eeline3",
+    "title": "LHCb Stripping vstripping21 dy2eeline3",
     "type": {
       "primary": "Documentation",
       "secondary": [

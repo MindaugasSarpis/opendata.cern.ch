@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdlooseanndownkaons",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdlooseanndownkaons",
+    "title": "LHCb Stripping vstripping21 stdlooseanndownkaons",
     "type": {
       "primary": "Documentation",
       "secondary": [

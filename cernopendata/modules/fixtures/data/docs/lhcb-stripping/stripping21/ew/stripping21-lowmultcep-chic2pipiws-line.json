@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-lowmultcep-chic2pipiws-line",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 lowmultcep chic2pipiws line",
+    "title": "LHCb Stripping vstripping21 lowmultcep chic2pipiws line",
     "type": {
       "primary": "Documentation",
       "secondary": [

@@ -1,15 +1,15 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StdTightPhi2KK
 
 **CombineParticles/StdTightPhi2KK**
 
-|                  |                                                                     |
-|------------------|---------------------------------------------------------------------|
-| Inputs           | ['Phys/ [StdTightKaons](./stripping21-stdtightkaons) /Particles'] |
-| DaughtersCuts    | {'K+': '(PT\>500\*MeV)'}                                            |
-| CombinationCut   | (ADAMASS('phi(1020)')\<30\*MeV) & (ADOCACHI2CUT(30, ''))            |
-| MotherCut        | (VFASPF(VCHI2) \< 25.0)                                             |
-| DecayDescriptor  | phi(1020) -\> K+ K-                                                 |
-| DecayDescriptors | []                                                                |
-| Output           | None                                                                |
+|                  |                                                                                       |
+|------------------|---------------------------------------------------------------------------------------|
+| Inputs           | \['Phys/[StdTightKaons](../commonparticles/stripping21-stdtightkaons.md)/Particles'\] |
+| DaughtersCuts    | {'K+': '(PT\>500\*MeV)'}                                                              |
+| CombinationCut   | (ADAMASS('phi(1020)')\<30\*MeV) & (ADOCACHI2CUT(30, ''))                              |
+| MotherCut        | (VFASPF(VCHI2) \< 25.0)                                                               |
+| DecayDescriptor  | phi(1020) -\> K+ K-                                                                   |
+| DecayDescriptors | \[\]                                                                                  |
+| Output           | None                                                                                  |

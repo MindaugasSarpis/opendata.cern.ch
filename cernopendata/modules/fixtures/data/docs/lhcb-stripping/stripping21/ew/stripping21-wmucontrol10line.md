@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingWMuControl10Line
 
@@ -15,24 +15,24 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllLooseMuons_Particles
 
-|      |                                                                                    |
-|------|------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) /Particles')\>0 |
+|      |                                                                                                      |
+|------|------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)/Particles')\>0 |
 
-**FilterDesktop/WMuControl10Line**
+FilterDesktop/WMuControl10Line
 
-|                 |                                                                   |
-|-----------------|-------------------------------------------------------------------|
-| Code            | (PT\>10.0\*GeV)                                                   |
-| Inputs          | [ 'Phys/ [StdAllLooseMuons](./stripping21-stdallloosemuons) ' ] |
-| DecayDescriptor | None                                                              |
-| Output          | Phys/WMuControl10Line/Particles                                   |
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+| Code            | (PT\>10.0\*GeV)                                                                     |
+| Inputs          | \[ 'Phys/[StdAllLooseMuons](../commonparticles/stripping21-stdallloosemuons.md)' \] |
+| DecayDescriptor | None                                                                                |
+| Output          | Phys/WMuControl10Line/Particles                                                     |

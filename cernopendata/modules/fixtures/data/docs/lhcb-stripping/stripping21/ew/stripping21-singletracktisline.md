@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingSingleTrackTISLine
 
@@ -15,40 +15,38 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsMuons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsMuons_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsMuons](./stripping21-stdallnopidsmuons) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsMuons](../commonparticles/stripping21-stdallnopidsmuons.md)/Particles')\>0 |
 
-**FilterDesktop/SingleTrackTISNoPIDs**
+FilterDesktop/SingleTrackTISNoPIDs
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            |                                                                     |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsMuons](./stripping21-stdallnopidsmuons) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/SingleTrackTISNoPIDs/Particles                                 |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            |                                                                                       |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsMuons](../commonparticles/stripping21-stdallnopidsmuons.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/SingleTrackTISNoPIDs/Particles                                                   |
 
-**TisTosParticleTagger/SingleTrackTISHlt1TIS**
+TisTosParticleTagger/SingleTrackTISHlt1TIS
 
 |                 |                                      |
 |-----------------|--------------------------------------|
-| Inputs          | [ 'Phys/SingleTrackTISNoPIDs' ]    |
+| Inputs          | \[ 'Phys/SingleTrackTISNoPIDs' \]    |
 | DecayDescriptor | None                                 |
 | Output          | Phys/SingleTrackTISHlt1TIS/Particles |
 | TisTosSpecs     | { 'Hlt1.\*Decision%TIS' : 0 }        |
 
-****Tools:****
-
-**TriggerTisTosTool**
+TriggerTisTosTool
 
 |                                 |                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -58,7 +56,7 @@
 | Particle2LHCbIDsMapLocation :   | None                                                                                                      |
 | CompositeTPSviaPartialTOSonly : | False                                                                                                     |
 | TriggerInputWarnings :          | False                                                                                                     |
-| StatEntityList :                | [ ]                                                                                                     |
+| StatEntityList :                | \[ \]                                                                                                     |
 | RootOnTES :                     | None                                                                                                      |
 | CaloClustForCharged :           | True                                                                                                      |
 | TOSFracTT :                     | 0.0000000                                                                                                 |
@@ -97,9 +95,9 @@
 | TOSFracVelo :                   | 0.70000000                                                                                                |
 | EfficiencyRowFormat :           | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
 | FullAnalysisReport :            | True                                                                                                      |
-| CounterList :                   | [ '.\*' ]                                                                                               |
+| CounterList :                   | \[ '.\*' \]                                                                                               |
 
-**Hlt1TriggerTisTosTool**
+Hlt1TriggerTisTosTool
 
 |                                 |                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -109,7 +107,7 @@
 | Particle2LHCbIDsMapLocation :   | None                                                                                                      |
 | CompositeTPSviaPartialTOSonly : | False                                                                                                     |
 | TriggerInputWarnings :          | False                                                                                                     |
-| StatEntityList :                | [ ]                                                                                                     |
+| StatEntityList :                | \[ \]                                                                                                     |
 | RootOnTES :                     | None                                                                                                      |
 | CaloClustForCharged :           | True                                                                                                      |
 | TOSFracTT :                     | 0.0000000                                                                                                 |
@@ -148,20 +146,18 @@
 | TOSFracVelo :                   | 0.70000000                                                                                                |
 | EfficiencyRowFormat :           | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
 | FullAnalysisReport :            | True                                                                                                      |
-| CounterList :                   | [ '.\*' ]                                                                                               |
+| CounterList :                   | \[ '.\*' \]                                                                                               |
 
-**TisTosParticleTagger/SingleTrackTISLine**
+TisTosParticleTagger/SingleTrackTISLine
 
 |                 |                                    |
 |-----------------|------------------------------------|
-| Inputs          | [ 'Phys/SingleTrackTISHlt1TIS' ] |
+| Inputs          | \[ 'Phys/SingleTrackTISHlt1TIS' \] |
 | DecayDescriptor | None                               |
 | Output          | Phys/SingleTrackTISLine/Particles  |
 | TisTosSpecs     | { 'Hlt2.\*Decision%TIS' : 0 }      |
 
-****Tools:****
-
-**TriggerTisTosTool**
+TriggerTisTosTool
 
 |                                 |                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -171,7 +167,7 @@
 | Particle2LHCbIDsMapLocation :   | None                                                                                                      |
 | CompositeTPSviaPartialTOSonly : | False                                                                                                     |
 | TriggerInputWarnings :          | False                                                                                                     |
-| StatEntityList :                | [ ]                                                                                                     |
+| StatEntityList :                | \[ \]                                                                                                     |
 | RootOnTES :                     | None                                                                                                      |
 | CaloClustForCharged :           | True                                                                                                      |
 | TOSFracTT :                     | 0.0000000                                                                                                 |
@@ -210,9 +206,9 @@
 | TOSFracVelo :                   | 0.70000000                                                                                                |
 | EfficiencyRowFormat :           | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
 | FullAnalysisReport :            | True                                                                                                      |
-| CounterList :                   | [ '.\*' ]                                                                                               |
+| CounterList :                   | \[ '.\*' \]                                                                                               |
 
-**Hlt2TriggerTisTosTool**
+Hlt2TriggerTisTosTool
 
 |                                 |                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -222,7 +218,7 @@
 | Particle2LHCbIDsMapLocation :   | None                                                                                                      |
 | CompositeTPSviaPartialTOSonly : | False                                                                                                     |
 | TriggerInputWarnings :          | False                                                                                                     |
-| StatEntityList :                | [ ]                                                                                                     |
+| StatEntityList :                | \[ \]                                                                                                     |
 | RootOnTES :                     | None                                                                                                      |
 | CaloClustForCharged :           | True                                                                                                      |
 | TOSFracTT :                     | 0.0000000                                                                                                 |
@@ -261,4 +257,4 @@
 | TOSFracVelo :                   | 0.70000000                                                                                                |
 | EfficiencyRowFormat :           | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
 | FullAnalysisReport :            | True                                                                                                      |
-| CounterList :                   | [ '.\*' ]                                                                                               |
+| CounterList :                   | \[ '.\*' \]                                                                                               |

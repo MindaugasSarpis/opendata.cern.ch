@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-displverticeslinesjetsinglelowmass",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 displverticeslinesjetsinglelowmass",
+    "title": "LHCb Stripping vstripping21 displverticeslinesjetsinglelowmass",
     "type": {
       "primary": "Documentation",
       "secondary": [

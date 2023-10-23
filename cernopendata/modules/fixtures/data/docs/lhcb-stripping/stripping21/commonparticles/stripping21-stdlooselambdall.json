@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdlooselambdall",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdlooselambdall",
+    "title": "LHCb Stripping vstripping21 stdlooselambdall",
     "type": {
       "primary": "Documentation",
       "secondary": [

@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-sbarscorrelationsf2line",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 sbarscorrelationsf2line",
+    "title": "LHCb Stripping vstripping21 sbarscorrelationsf2line",
     "type": {
       "primary": "Documentation",
       "secondary": [

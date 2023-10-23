@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-displverticeslinesjethltsinglehighmass",
     "stripping": {
-      "stream": "EW",
+      "stream": "ew",
       "version": "stripping21"
     },
     "tags": [
-      "EW"
+      "ew"
     ],
-    "title": "LHCb Stripping V21 displverticeslinesjethltsinglehighmass",
+    "title": "LHCb Stripping vstripping21 displverticeslinesjethltsinglehighmass",
     "type": {
       "primary": "Documentation",
       "secondary": [

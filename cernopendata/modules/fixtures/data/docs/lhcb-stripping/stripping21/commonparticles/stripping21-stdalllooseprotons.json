@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stdalllooseprotons",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stdalllooseprotons",
+    "title": "LHCb Stripping vstripping21 stdalllooseprotons",
     "type": {
       "primary": "Documentation",
       "secondary": [

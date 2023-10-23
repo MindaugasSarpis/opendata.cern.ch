@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingDisplVerticesLinesJetSingleHighMass
 
@@ -15,37 +15,35 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterRec_Track_Best**
+LoKi::VoidFilter/SelFilterRec_Track_Best
 
 |      |                               |
 |------|-------------------------------|
 | Code | CONTAINS('Rec/Track/Best')\>0 |
 
-**VeloEventShapeCutsS20p3/DisplVerticesLinesVeloGEC**
+VeloEventShapeCutsS20p3/DisplVerticesLinesVeloGEC
 
-**SelectVeloTracksNotFromPVS20p3/DisplVerticesLinesVeloFilteredTracks**
+SelectVeloTracksNotFromPVS20p3/DisplVerticesLinesVeloFilteredTracks
 
 |        |                                                     |
 |--------|-----------------------------------------------------|
-| Inputs | [ 'Rec/Track/Best' ]                              |
+| Inputs | \[ 'Rec/Track/Best' \]                              |
 | Output | Phys/DisplVerticesLinesVeloFilteredTracks/Particles |
 
-****Tools:****
-
-**TrackUniqueSegmentSelectorS20p3**
+TrackUniqueSegmentSelectorS20p3
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -65,13 +63,11 @@
 | TrackSelector :          | None                                                                                                      |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**PatPV3D/DisplVerticesLinesWithVeloVertexing**
+PatPV3D/DisplVerticesLinesWithVeloVertexing
 
-****Tools:****
-
-**PVOfflineTool**
+PVOfflineTool
 
 |                                 |                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -96,7 +92,7 @@
 | MaxStepSize :                   | 1000.0000                                                                                                 |
 | ApplyElectronEnergyLossCorr :   | True                                                                                                      |
 | MinTracks :                     | 4                                                                                                         |
-| StatEntityList :                | [ ]                                                                                                     |
+| StatEntityList :                | \[ \]                                                                                                     |
 | MinRadThickness :               | 0.00010000000                                                                                             |
 | BeamSpotRCut :                  | 0.30000000                                                                                                |
 | RootOnTES :                     | None                                                                                                      |
@@ -126,7 +122,7 @@
 | StatPrint :                     | True                                                                                                      |
 | MaterialLocator :               | DetailedMaterialLocator                                                                                   |
 | Geometry :                      | /dd/Structure/LHCb                                                                                        |
-| InputTracks :                   | [ 'Phys/DisplVerticesLinesVeloFilteredTracks/Particles' ]                                               |
+| InputTracks :                   | \[ 'Phys/DisplVerticesLinesVeloFilteredTracks/Particles' \]                                               |
 | AuditStop :                     | False                                                                                                     |
 | RequireVelo :                   | True                                                                                                      |
 | Context :                       | None                                                                                                      |
@@ -157,19 +153,17 @@
 | EfficiencyRowFormat :           | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
 | NumericalJacobian :             | False                                                                                                     |
 | GeneralDedxToolName :           | StateDetailedBetheBlochEnergyCorrectionTool                                                               |
-| CounterList :                   | [ '.\*' ]                                                                                               |
+| CounterList :                   | \[ '.\*' \]                                                                                               |
 
-**LLParticlesFromRecVertices/DisplVerticesLinesWithVeloCandidates**
+LLParticlesFromRecVertices/DisplVerticesLinesWithVeloCandidates
 
 |                 |                                                     |
 |-----------------|-----------------------------------------------------|
-| Inputs          | [ ]                                               |
+| Inputs          | \[ \]                                               |
 | DecayDescriptor | None                                                |
 | Output          | Phys/DisplVerticesLinesWithVeloCandidates/Particles |
 
-****Tools:****
-
-**muon**
+muon
 
 |                           |                                                                                                           |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -180,7 +174,7 @@
 | MaxChi2PerDoFDownstream : | -1.0000000                                                                                                |
 | AcceptClones :            | True                                                                                                      |
 | ErrorsPrint :             | True                                                                                                      |
-| StatEntityList :          | [ ]                                                                                                     |
+| StatEntityList :          | \[ \]                                                                                                     |
 | MinNVeloRHits :           | 0                                                                                                         |
 | RootOnTES :               | None                                                                                                      |
 | MaxPtCut :                | -1.0000000                                                                                                |
@@ -215,8 +209,8 @@
 | PropertiesPrint :         | False                                                                                                     |
 | GlobalTimeOffset :        | 0.0000000                                                                                                 |
 | MinLikelihoodCut :        | -1.7976931e+308                                                                                           |
-| Selection :               | [ "RequiresDet='MUON' IsMuon=True CombDLL(mu-pi)\>'-8.0'" ]                                             |
-| TrackTypes :              | [ 'Velo' , 'VeloR' , 'Long' , 'Upstream' , 'Downstream' , 'Ttrack' , 'Backward' , 'TT' ]                |
+| Selection :               | \[ "RequiresDet='MUON' IsMuon=True CombDLL(mu-pi)\>'-8.0'" \]                                             |
+| TrackTypes :              | \[ 'Velo' , 'VeloR' , 'Long' , 'Upstream' , 'Downstream' , 'Ttrack' , 'Backward' , 'TT' \]                |
 | MaxPCut :                 | -1.0000000                                                                                                |
 | MaxCloneDistCut :         | 1.7976931e+308                                                                                            |
 | MaxChi2PerDoFMatch :      | -1.0000000                                                                                                |
@@ -227,15 +221,15 @@
 | MinCloneDistCut :         | -1.0000000e+10                                                                                            |
 | iWeight :                 | 1.0000000                                                                                                 |
 | EfficiencyRowFormat :     | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :             | [ '.\*' ]                                                                                               |
+| CounterList :             | \[ '.\*' \]                                                                                               |
 
-**electron**
+electron
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -252,18 +246,18 @@
 | Context :                | None                                                                                                      |
 | PropertiesPrint :        | False                                                                                                     |
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
-| Selection :              | [ "RequiresDet='CALO' CombDLL(e-pi)\>'0.0'" ]                                                           |
+| Selection :              | \[ "RequiresDet='CALO' CombDLL(e-pi)\>'0.0'" \]                                                           |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**proton**
+proton
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -280,18 +274,18 @@
 | Context :                | None                                                                                                      |
 | PropertiesPrint :        | False                                                                                                     |
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
-| Selection :              | [ "RequiresDet='RICH' CombDLL(p-pi)\>'3.0'" ]                                                           |
+| Selection :              | \[ "RequiresDet='RICH' CombDLL(p-pi)\>'3.0'" \]                                                           |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**pion**
+pion
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -308,18 +302,18 @@
 | Context :                | None                                                                                                      |
 | PropertiesPrint :        | False                                                                                                     |
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
-| Selection :              | [ '' ]                                                                                                  |
+| Selection :              | \[ '' \]                                                                                                  |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**kaon**
+kaon
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -336,37 +330,35 @@
 | Context :                | None                                                                                                      |
 | PropertiesPrint :        | False                                                                                                     |
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
-| Selection :              | [ "RequiresDet='RICH' CombDLL(k-pi)\>'2.0' CombDLL(k-p)\>'-2.0'" ]                                      |
+| Selection :              | \[ "RequiresDet='RICH' CombDLL(k-pi)\>'2.0' CombDLL(k-p)\>'-2.0'" \]                                      |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**FilterDesktop/DisplVerticesLinesJetSingleHighMassSelectionVertices**
+FilterDesktop/DisplVerticesLinesJetSingleHighMassSelectionVertices
 
-|                 |                                                                                                                                                                                                                |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Code            | ( \~ISBASIC ) & ( \~INMATTER ) & ( MAXFRACTENERGYINSINGLETRACK \< 0.8 ) & ( MM \> 5000.0 ) & ( NDAUGS \>= 5 ) & ( SUMPT \> 7000.0 ) & ( FRACTDAUGHTERTRACKSWITHUPSTREAMHIT \< 0.49 ) & ( ENDVERTEXRHO \> 0.4 ) |
-| Inputs          | [ 'Phys/DisplVerticesLinesWithVeloCandidates' ]                                                                                                                                                              |
-| DecayDescriptor | \~chi_10                                                                                                                                                                                                       |
-| Output          | Phys/DisplVerticesLinesJetSingleHighMassSelectionVertices/Particles                                                                                                                                            |
+|                 |                                                                                                                                                                                                              |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Code            | ( ~ISBASIC ) & ( ~INMATTER ) & ( MAXFRACTENERGYINSINGLETRACK \< 0.8 ) & ( MM \> 5000.0 ) & ( NDAUGS \>= 5 ) & ( SUMPT \> 7000.0 ) & ( FRACTDAUGHTERTRACKSWITHUPSTREAMHIT \< 0.49 ) & ( ENDVERTEXRHO \> 0.4 ) |
+| Inputs          | \[ 'Phys/DisplVerticesLinesWithVeloCandidates' \]                                                                                                                                                            |
+| DecayDescriptor | ~chi_10                                                                                                                                                                                                      |
+| Output          | Phys/DisplVerticesLinesJetSingleHighMassSelectionVertices/Particles                                                                                                                                          |
 
-**DisplacedVertexJetCandidateMakerS20p3/DisplVerticesLinesJetSingleHighMassSelectionJets**
+DisplacedVertexJetCandidateMakerS20p3/DisplVerticesLinesJetSingleHighMassSelectionJets
 
 |                 |                                                                   |
 |-----------------|-------------------------------------------------------------------|
-| Inputs          | [ 'Phys/DisplVerticesLinesJetSingleHighMassSelectionVertices' ] |
+| Inputs          | \[ 'Phys/DisplVerticesLinesJetSingleHighMassSelectionVertices' \] |
 | DecayDescriptor | None                                                              |
 | Output          | Phys/DisplVerticesLinesJetSingleHighMassSelectionJets/Particles   |
 
-****Tools:****
-
-**JEC**
+JEC
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -388,16 +380,16 @@
 | AuditStart :             | False                                                                                                     |
 | Apply :                  | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**MomentumCombiner**
+MomentumCombiner
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | Transporter :            | None                                                                                                      |
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | PrintMyAlg :             | True                                                                                                      |
 | RootInTES :              | None                                                                                                      |
@@ -417,9 +409,9 @@
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**LoKi\_\_FastJetMaker**
+LoKi\_\_FastJetMaker
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -428,7 +420,7 @@
 | Strategy :               | 1                                                                                                         |
 | Type :                   | 2                                                                                                         |
 | Sort :                   | 2                                                                                                         |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | ParticleCombiner :       | MomentumCombiner                                                                                          |
 | RootInTES :              | None                                                                                                      |
@@ -454,15 +446,15 @@
 | AuditStart :             | False                                                                                                     |
 | Recombination :          | 0                                                                                                         |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**JetIDInfo**
+JetIDInfo
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -481,34 +473,32 @@
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |
 
-**FilterDesktop/DisplVerticesLinesJetSingleHighMass**
+FilterDesktop/DisplVerticesLinesJetSingleHighMass
 
 |                 |                                                               |
 |-----------------|---------------------------------------------------------------|
 | Code            | ISLLP & ( NINTREE(ISJET) \>= 2 ) & ( MM \> 0.0 )              |
-| Inputs          | [ 'Phys/DisplVerticesLinesJetSingleHighMassSelectionJets' ] |
-| DecayDescriptor | \~chi_10                                                      |
+| Inputs          | \[ 'Phys/DisplVerticesLinesJetSingleHighMassSelectionJets' \] |
+| DecayDescriptor | ~chi_10                                                       |
 | Output          | Phys/DisplVerticesLinesJetSingleHighMass/Particles            |
 
-**AddRelatedInfo/RelatedInfo1_DisplVerticesLinesJetSingleHighMass**
+AddRelatedInfo/RelatedInfo1_DisplVerticesLinesJetSingleHighMass
 
 |                 |                                                                 |
 |-----------------|-----------------------------------------------------------------|
-| Inputs          | [ 'Phys/DisplVerticesLinesJetSingleHighMass' ]                |
+| Inputs          | \[ 'Phys/DisplVerticesLinesJetSingleHighMass' \]                |
 | DecayDescriptor | None                                                            |
 | Output          | Phys/RelatedInfo1_DisplVerticesLinesJetSingleHighMass/Particles |
 
-****Tools:****
-
-**Tool1**
+Tool1
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
 | StatTableHeader :        | \| Counter \| \# \| sum \| mean/eff^\* \| rms/err^\* \| min \| max \|                                     |
 | ErrorsPrint :            | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | RootInTES :              | None                                                                                                      |
 | AuditFinalize :          | False                                                                                                     |
@@ -527,4 +517,4 @@
 | GlobalTimeOffset :       | 0.0000000                                                                                                 |
 | AuditStart :             | False                                                                                                     |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |

@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingInclbJets
 
@@ -15,36 +15,34 @@
 
 ## Filter sequence:
 
-**CheckPV/checkPVmin1**
+CheckPV/checkPVmin1
 
 |        |     |
 |--------|-----|
 | MinPVs | 1   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)/Particles')\>0 |
 
-**LoKi::VoidFilter/SelFilterPhys_StdLooseAllPhotons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdLooseAllPhotons_Particles
 
-|      |                                                                                        |
-|------|----------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdLooseAllPhotons](./stripping21-stdlooseallphotons) /Particles')\>0 |
+|      |                                                                                                          |
+|------|----------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdLooseAllPhotons](../commonparticles/stripping21-stdlooseallphotons.md)/Particles')\>0 |
 
-**bJetSeeds/InclbJets**
+bJetSeeds/InclbJets
 
-|                 |                                                                                                                                       |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Inputs          | [ 'Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) ' , 'Phys/ [StdLooseAllPhotons](./stripping21-stdlooseallphotons) ' ] |
-| DecayDescriptor | None                                                                                                                                  |
-| Output          | Phys/InclbJets/Particles                                                                                                              |
+|                 |                                                                                                                                                                           |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Inputs          | \[ 'Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)' , 'Phys/[StdLooseAllPhotons](../commonparticles/stripping21-stdlooseallphotons.md)' \] |
+| DecayDescriptor | None                                                                                                                                                                      |
+| Output          | Phys/InclbJets/Particles                                                                                                                                                  |
 
-****Tools:****
-
-**OfflineVertexFitter**
+OfflineVertexFitter
 
 |                          |                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -57,7 +55,7 @@
 | useResonanceVertex :     | True                                                                                                      |
 | maxIter :                | 10                                                                                                        |
 | includeDauVertexChi2 :   | True                                                                                                      |
-| StatEntityList :         | [ ]                                                                                                     |
+| StatEntityList :         | \[ \]                                                                                                     |
 | RootOnTES :              | None                                                                                                      |
 | PrintMyAlg :             | True                                                                                                      |
 | RootInTES :              | None                                                                                                      |
@@ -79,4 +77,4 @@
 | maxDeltaZ :              | 1.0000000                                                                                                 |
 | UseEfficiencyRowFormat : | True                                                                                                      |
 | EfficiencyRowFormat :    | \|\*%\|-48.48s\|%\|50t\|\|%\|10d\| \|%\|11.5g\| \|(%\|#9.6g\| +- %\|-#9.6g\|)%%\| ------- \| ------- \|   |
-| CounterList :            | [ '.\*' ]                                                                                               |
+| CounterList :            | \[ '.\*' \]                                                                                               |

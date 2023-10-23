@@ -18,13 +18,13 @@
     },
     "slug": "stripping21-stddielectronfromtracks",
     "stripping": {
-      "stream": "COMMONPARTICLES",
+      "stream": "commonparticles",
       "version": "stripping21"
     },
     "tags": [
-      "COMMONPARTICLES"
+      "commonparticles"
     ],
-    "title": "LHCb Stripping V21 stddielectronfromtracks",
+    "title": "LHCb Stripping vstripping21 stddielectronfromtracks",
     "type": {
       "primary": "Documentation",
       "secondary": [

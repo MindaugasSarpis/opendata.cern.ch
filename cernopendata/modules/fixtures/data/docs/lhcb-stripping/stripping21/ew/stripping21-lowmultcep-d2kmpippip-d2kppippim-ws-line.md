@@ -1,4 +1,4 @@
-[[stripping21 lines]](./stripping21-index)
+[\[stripping21 lines\]](../stripping21-index.md)
 
 # StrippingLowMultCEP_D2KmPipPip_D2KpPipPim_WS_line
 
@@ -15,81 +15,81 @@
 
 ## Filter sequence:
 
-**LoKi::VoidFilter/StrippingLowMultCEP_D2KmPipPip_D2KpPipPim_WS_lineVOIDFilter**
+LoKi::VoidFilter/StrippingLowMultCEP_D2KmPipPip_D2KpPipPim_WS_lineVOIDFilter
 
 |      |                                                                                                                                                                     |
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code | (recSummaryTrack(LHCb.RecSummary.nLongTracks, TrLONG) \> 1) & (recSummaryTrack(LHCb.RecSummary.nBackTracks, TrBACKWARD) \< 1) & (CONTAINS ('Rec/Track/Best') \< 12) |
 
-**CheckPV/checkPVmin0**
+CheckPV/checkPVmin0
 
 |        |     |
 |--------|-----|
 | MinPVs | 0   |
 | MaxPVs | -1  |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsKaons_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsKaons_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsKaons](./stripping21-stdallnopidskaons) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsKaons](../commonparticles/stripping21-stdallnopidskaons.md)/Particles')\>0 |
 
-**FilterDesktop/KaonsForLowMult**
+FilterDesktop/KaonsForLowMult
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            | (PT \> 100.0) & (P \> 5000.0) & (TRCHI2DOF \< 3.0) & (PIDK \> 0.0)  |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsKaons](./stripping21-stdallnopidskaons) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/KaonsForLowMult/Particles                                      |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            | (PT \> 100.0) & (P \> 5000.0) & (TRCHI2DOF \< 3.0) & (PIDK \> 0.0)                    |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsKaons](../commonparticles/stripping21-stdallnopidskaons.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/KaonsForLowMult/Particles                                                        |
 
-**LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles**
+LoKi::VoidFilter/SelFilterPhys_StdAllNoPIDsPions_Particles
 
-|      |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-| Code | CONTAINS('Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) /Particles')\>0 |
+|      |                                                                                                        |
+|------|--------------------------------------------------------------------------------------------------------|
+| Code | CONTAINS('Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)/Particles')\>0 |
 
-**FilterDesktop/PionsForLowMult**
+FilterDesktop/PionsForLowMult
 
-|                 |                                                                     |
-|-----------------|---------------------------------------------------------------------|
-| Code            | (PT \> 100.0) & (P \> 5000.0) & (TRCHI2DOF \< 3.0)                  |
-| Inputs          | [ 'Phys/ [StdAllNoPIDsPions](./stripping21-stdallnopidspions) ' ] |
-| DecayDescriptor | None                                                                |
-| Output          | Phys/PionsForLowMult/Particles                                      |
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+| Code            | (PT \> 100.0) & (P \> 5000.0) & (TRCHI2DOF \< 3.0)                                    |
+| Inputs          | \[ 'Phys/[StdAllNoPIDsPions](../commonparticles/stripping21-stdallnopidspions.md)' \] |
+| DecayDescriptor | None                                                                                  |
+| Output          | Phys/PionsForLowMult/Particles                                                        |
 
-**CombineParticles/selD2pKmPipPip**
+CombineParticles/selD2pKmPipPip
 
 |                  |                                                                                                          |
 |------------------|----------------------------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/KaonsForLowMult' , 'Phys/PionsForLowMult' ]                                                    |
+| Inputs           | \[ 'Phys/KaonsForLowMult' , 'Phys/PionsForLowMult' \]                                                    |
 | DaughtersCuts    | { '' : 'ALL' , 'K+' : 'ALL' , 'K-' : 'ALL' , 'pi+' : 'ALL' , 'pi-' : 'ALL' }                             |
 | CombinationCut   | (APT \> 0.0) & (ADAMASS('D+') \< 80.0) & (ADOCAMAX('LoKi::DistanceCalculator') \< 0.5) & (AP \> 10000.0) |
 | MotherCut        | (VFASPF(VCHI2PDOF) \< 15.0)                                                                              |
 | DecayDescriptor  | None                                                                                                     |
-| DecayDescriptors | [ 'D+ -\> K- pi+ pi+' ]                                                                                |
+| DecayDescriptors | \[ 'D+ -\> K- pi+ pi+' \]                                                                                |
 | Output           | Phys/selD2pKmPipPip/Particles                                                                            |
 
-**CombineParticles/selDm2KmPimPip**
+CombineParticles/selDm2KmPimPip
 
 |                  |                                                                                                          |
 |------------------|----------------------------------------------------------------------------------------------------------|
-| Inputs           | [ 'Phys/KaonsForLowMult' , 'Phys/PionsForLowMult' ]                                                    |
+| Inputs           | \[ 'Phys/KaonsForLowMult' , 'Phys/PionsForLowMult' \]                                                    |
 | DaughtersCuts    | { '' : 'ALL' , 'K+' : 'ALL' , 'K-' : 'ALL' , 'pi+' : 'ALL' , 'pi-' : 'ALL' }                             |
 | CombinationCut   | (APT \> 0.0) & (ADAMASS('D+') \< 80.0) & (ADOCAMAX('LoKi::DistanceCalculator') \< 0.5) & (AP \> 10000.0) |
 | MotherCut        | (VFASPF(VCHI2PDOF) \< 15.0)                                                                              |
 | DecayDescriptor  | None                                                                                                     |
-| DecayDescriptors | [ 'D- -\> K- pi- pi+' ]                                                                                |
+| DecayDescriptors | \[ 'D- -\> K- pi- pi+' \]                                                                                |
 | Output           | Phys/selDm2KmPimPip/Particles                                                                            |
 
-**CombineParticles/LowMultCEP_D2KmPipPip_D2KpPipPim_WS_line**
+CombineParticles/LowMultCEP_D2KmPipPip_D2KpPipPim_WS_line
 
 |                  |                                                         |
 |------------------|---------------------------------------------------------|
-| Inputs           | [ 'Phys/selD2pKmPipPip' , 'Phys/selDm2KmPimPip' ]     |
+| Inputs           | \[ 'Phys/selD2pKmPipPip' , 'Phys/selDm2KmPimPip' \]     |
 | DaughtersCuts    | { '' : 'ALL' , 'D+' : 'ALL' , 'D-' : 'ALL' }            |
 | CombinationCut   | AALL                                                    |
 | MotherCut        | ALL                                                     |
 | DecayDescriptor  | None                                                    |
-| DecayDescriptors | [ '[psi(3770) -\> D+ D+]cc' ]                       |
+| DecayDescriptors | \[ '\[psi(3770) -\> D+ D+\]cc' \]                       |
 | Output           | Phys/LowMultCEP_D2KmPipPip_D2KpPipPim_WS_line/Particles |
