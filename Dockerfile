@@ -22,13 +22,8 @@
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
-<<<<<<< HEAD
-# Use Invenio's CentOS7 image with Python-3.6
-FROM inveniosoftware/centos7-python:3.6
-=======
 # Use CentOS7
 FROM docker.io/library/centos:7
->>>>>>> origin/qa
 
 # Use XRootD 4.12.7
 ENV XROOTD_VERSION=4.12.7

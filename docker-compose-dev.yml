@@ -36,11 +36,7 @@ services:
   # firefox http://localhost:1984
   # ```
   wdb:
-<<<<<<< HEAD
-    image: kozea/wdb:3.2.5
-=======
     image: docker.io/kozea/wdb:3.3.0
->>>>>>> origin/qa
     ports:
       - "1984:1984"
 
@@ -177,11 +173,7 @@ services:
 
   elasticsearch:
     restart: "unless-stopped"
-<<<<<<< HEAD
-    image: elasticsearch:7.16.1
-=======
     image: docker.io/library/elasticsearch:5.6.16
->>>>>>> origin/qa
     # Uncomment if DEBUG logging needs to enabled for Elasticsearch
     # command: ["elasticsearch", "-Elogger.level=DEBUG"]
     environment:

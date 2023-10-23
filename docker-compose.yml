@@ -164,11 +164,7 @@ services:
 
   elasticsearch:
     restart: "always"
-<<<<<<< HEAD
-    image: elasticsearch:7.16.1
-=======
     image: docker.io/library/elasticsearch:5.6.16
->>>>>>> origin/qa
     command: ["elasticsearch", "-E", "logger.org.elasticsearch.deprecation=error"]
     environment:
       - bootstrap.memory_lock=true
