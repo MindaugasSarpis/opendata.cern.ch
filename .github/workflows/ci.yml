@@ -42,11 +42,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.6
 
+=======
+>>>>>>> origin/qa
       - name: Check compliance with Python coding style conventions
         run: |
           pip install --upgrade pip
@@ -59,11 +62,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.6
 
+=======
+>>>>>>> origin/qa
       - name: Check compliance with Python docstring conventions
         run: |
           pip install --upgrade pip
@@ -76,11 +82,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.6
 
+=======
+>>>>>>> origin/qa
       - name: Check Python manifest completeness
         run: |
           pip install --upgrade pip
@@ -110,11 +119,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.6
 
+=======
+>>>>>>> origin/qa
       - name: Check isort
         run: |
           pip install --upgrade pip
@@ -127,11 +139,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.6
 
+=======
+>>>>>>> origin/qa
       - name: Lint Dockerfile
         run: docker run -i --rm hadolint/hadolint:v1.18.2 < Dockerfile
 
